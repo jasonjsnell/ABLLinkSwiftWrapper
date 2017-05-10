@@ -9,13 +9,6 @@
 /*
  Port for all Ableton Link communication and functions
  
- IN
- Sequencer
- User Input via Settings Panel
- 
- OUT
- Sequencer
- 
 */
 
 import Foundation
