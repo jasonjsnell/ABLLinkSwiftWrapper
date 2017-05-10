@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		965CC73B1EC3711400A8893D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CC73A1EC3711400A8893D /* AppDelegate.swift */; };
-		965CC73D1EC3711400A8893D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CC73C1EC3711400A8893D /* ViewController.swift */; };
-		965CC7401EC3711400A8893D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CC73E1EC3711400A8893D /* Main.storyboard */; };
-		965CC7421EC3711400A8893D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965CC7411EC3711400A8893D /* Assets.xcassets */; };
-		965CC7451EC3711400A8893D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965CC7431EC3711400A8893D /* LaunchScreen.storyboard */; };
+		965CC74D1EC3713B00A8893D /* LinkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965CC74C1EC3713B00A8893D /* LinkWrapper.swift */; };
+		965CC7551EC3721000A8893D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 965CC7541EC3721000A8893D /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		965CC7371EC3711400A8893D /* ABLLinkSwiftWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABLLinkSwiftWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		965CC73A1EC3711400A8893D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		965CC73C1EC3711400A8893D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		965CC73F1EC3711400A8893D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		965CC7411EC3711400A8893D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		965CC7441EC3711400A8893D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		965CC7461EC3711400A8893D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965CC74C1EC3713B00A8893D /* LinkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkWrapper.swift; sourceTree = "<group>"; };
+		965CC7541EC3721000A8893D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965CC7551EC3721000A8893D /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +34,7 @@
 			children = (
 				965CC7391EC3711400A8893D /* ABLLinkSwiftWrapper */,
 				965CC7381EC3711400A8893D /* Products */,
+				965CC7531EC3721000A8893D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +49,17 @@
 		965CC7391EC3711400A8893D /* ABLLinkSwiftWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				965CC73A1EC3711400A8893D /* AppDelegate.swift */,
-				965CC73C1EC3711400A8893D /* ViewController.swift */,
-				965CC73E1EC3711400A8893D /* Main.storyboard */,
-				965CC7411EC3711400A8893D /* Assets.xcassets */,
-				965CC7431EC3711400A8893D /* LaunchScreen.storyboard */,
-				965CC7461EC3711400A8893D /* Info.plist */,
+				965CC74C1EC3713B00A8893D /* LinkWrapper.swift */,
 			);
 			path = ABLLinkSwiftWrapper;
+			sourceTree = "<group>";
+		};
+		965CC7531EC3721000A8893D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				965CC7541EC3721000A8893D /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965CC7451EC3711400A8893D /* LaunchScreen.storyboard in Resources */,
-				965CC7421EC3711400A8893D /* Assets.xcassets in Resources */,
-				965CC7401EC3711400A8893D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				965CC73D1EC3711400A8893D /* ViewController.swift in Sources */,
-				965CC73B1EC3711400A8893D /* AppDelegate.swift in Sources */,
+				965CC74D1EC3713B00A8893D /* LinkWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		965CC73E1EC3711400A8893D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				965CC73F1EC3711400A8893D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		965CC7431EC3711400A8893D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				965CC7441EC3711400A8893D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		965CC7471EC3711400A8893D /* Debug */ = {
@@ -266,6 +241,10 @@
 				DEVELOPMENT_TEAM = LN2HJCURK9;
 				INFOPLIST_FILE = ABLLinkSwiftWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ABLLinkSwiftWrapper",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonjsnell.ABLLinkSwiftWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -279,6 +258,10 @@
 				DEVELOPMENT_TEAM = LN2HJCURK9;
 				INFOPLIST_FILE = ABLLinkSwiftWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ABLLinkSwiftWrapper",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonjsnell.ABLLinkSwiftWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
