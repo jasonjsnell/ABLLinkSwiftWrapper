@@ -514,7 +514,6 @@ public class LinkWrapper:NSObject {
         } else {
             print("ABL: Error getting linkRef when adding listeners")
         }
-        
     }
     
     //MARK: Tempo changes from other Link devices
