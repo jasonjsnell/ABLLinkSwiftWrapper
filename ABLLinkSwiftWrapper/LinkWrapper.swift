@@ -467,7 +467,7 @@ public class LinkWrapper:NSObject {
                 { (sessionTempo, context) -> Void in
                     
                     if let context = context {
-                        let localSelf = Unmanaged<XvAbletonLink>.fromOpaque(context).takeUnretainedValue()
+                        let localSelf = Unmanaged<LinkWrapper>.fromOpaque(context).takeUnretainedValue()
                         let localSelfAsUMRP = UnsafeMutableRawPointer(mutating:context)
                         localSelf.onSessionTempoChanged(bpm: sessionTempo, context: localSelfAsUMRP)
                     }
@@ -500,7 +500,7 @@ public class LinkWrapper:NSObject {
                 { (isEnabled, context) -> Void in
                     
                     if let context = context {
-                        let localSelf = Unmanaged<XvAbletonLink>.fromOpaque(context).takeUnretainedValue()
+                        let localSelf = Unmanaged<LinkWrapper>.fromOpaque(context).takeUnretainedValue()
                         let localSelfAsUMRP = UnsafeMutableRawPointer(mutating:context)
                         localSelf.onLinkEnabled(isEnabled: isEnabled, context: localSelfAsUMRP)
                     }
